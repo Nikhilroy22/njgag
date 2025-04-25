@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1058095526664",
+    "project_id": "njgag-95a59",
+    "storage_bucket": "njgag-95a59.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058095526664:android:3e0950130e3345fa91b2bd",
+        "android_client_info": {
+          "package_name": "com.njgag.nikhil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJkCHymR67tf9gUGCSc2UKAEelzP-j4Cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+    namespace 'com.njgag.nikhil'
+        applicationId "com.njgag.nikhil"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+signingConfigs {
+        release {
+            storeFile file("my-release-key.jks")
+            storePassword "nikhil"
+            keyAlias "my-key-alias"
+            keyPassword "nikhil"
+        }
+    }
+    buildTypes {
+        release {
+        signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.compilerArgs << "-Xlint:deprecation"
+    }
+
+}
+
+
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+	
+	implementation 'com.google.android.material:material:1.12.0'
+	
+	implementation 'com.google.android.gms:play-services-ads:22.6.0'
+	
+
+implementation 'com.google.firebase:firebase-messaging:23.0.0'
+
+implementation 'com.google.firebase:firebase-firestore:24.10.0'
+implementation 'com.google.firebase:firebase-auth:22.3.0'
+
+}

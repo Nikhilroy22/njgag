@@ -1,0 +1,32 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	>
+  <Button
+    android:id="@+id/signOutButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="সাইন আউট" />
+  
+  
+	<TextView
+		android:id="@+id/textview1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		
+		android:text="Home"
+		 />
+		 <TextView
+    android:id="@+id/textview2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:text="ইউজারের তথ্য এখানে দেখানো হবে" />
+		 
+		 
+		 
+</LinearLayout>
