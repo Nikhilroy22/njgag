@@ -4,7 +4,7 @@ public class User {
     private String name;
 
     public User() {
-        // Firestore এর জন্য দরকার
+        // Firestore ki এর জন্য দরকার
     }
 
     public User(String name) {
